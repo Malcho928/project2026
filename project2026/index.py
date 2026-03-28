@@ -188,7 +188,7 @@ if camera_photo is not None:
                         }
                     ],
                     temperature=0.1,
-                    max_tokens=400,
+                    max_tokens=1000,
                 )
 
                 result = extract_result_text(response)
