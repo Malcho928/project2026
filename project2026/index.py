@@ -12,8 +12,7 @@ import hashlib
 # 1. 페이지 설정
 # -----------------------------
 st.set_page_config(
-    page_title="AI 시각 보조 시스템 made by 3116이지훈",
-    page_icon="🦯",
+    page_title="AI 시각 보조 시스템",
     layout="wide"
 )
 
