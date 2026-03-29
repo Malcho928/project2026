@@ -187,14 +187,14 @@ if camera_photo is not None:
                         }
                     ],
                     temperature=0.1,
-                    max_tokens=1000,
+                    max_tokens=3000,
                 )
 
                 result = extract_result_text(response)
 
                 st.session_state.analysis_count += 1
                 st.success("분석 완료")
-                st.markdown(f"### 🤖 AI 분석 결과\n{result}")
+                st.markdown(f"### AI 분석 결과\n{result}")
 
                 # 새 사진이면 항상 읽기
                 speak_text_via_browser(result)
