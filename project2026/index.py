@@ -209,7 +209,7 @@ if camera_photo is not None:
 
                 finish_reason = response.choices[0].finish_reason
                 if finish_reason == "length":
-                    st.warning("모델 응답이 길이 제한으로 중간에 잘렸습니다. 다른 모델을 쓰거나 max_tokens를 더 늘리면 더 안정적일 수 있습니다.")
+                    st.warning("모델 응답이 길이 제한으로 중간에 잘렸습니다.max_tokens를 더 늘리면 더 안정적일 수 있습니다.")
 
             except Exception as e:
                 st.error(f"LM Studio 또는 모델 호출 오류: {e}")
